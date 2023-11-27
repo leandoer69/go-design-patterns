@@ -1,4 +1,4 @@
-package pkg
+package builder
 
 const (
 	AsusCollectorType = "asus"

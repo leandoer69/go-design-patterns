@@ -1,4 +1,4 @@
-package pkg
+package builder
 
 type HpCollector struct {
 	Core        int

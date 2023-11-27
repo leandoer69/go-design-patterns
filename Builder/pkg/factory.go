@@ -1,4 +1,4 @@
-package pkg
+package builder
 
 type Factory struct {
 	Collector Collector

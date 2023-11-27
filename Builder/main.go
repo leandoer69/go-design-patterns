@@ -3,10 +3,10 @@ package main
 import "go_design_patterns/Builder/pkg"
 
 func main() {
-	asusCollector := pkg.GetCollector(pkg.AsusCollectorType)
-	hpCollector := pkg.GetCollector(pkg.HpCollectorType)
+	asusCollector := builder.GetCollector(builder.AsusCollectorType)
+	hpCollector := builder.GetCollector(builder.HpCollectorType)
 
-	factory := pkg.NewFactory(asusCollector)
+	factory := builder.NewFactory(asusCollector)
 	asusComputer := factory.CreateComputer()
 	asusComputer.Print()
 

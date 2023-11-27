@@ -1,4 +1,4 @@
-package pkg
+package builder
 
 type AsusCollector struct {
 	Core        int

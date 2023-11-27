@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	absFact "go_design_patterns/AbstractFactory/pkg"
+	absFact2 "go_design_patterns/AbstractFactory/01/pkg"
 )
 
-var brands = []string{absFact.Asus, absFact.HP, "dell"}
+var brands = []string{absFact2.Asus, absFact2.HP, "dell"}
 
 func main() {
 	for _, brand := range brands {
-		factory, err := absFact.NewFactory(brand)
+		factory, err := absFact2.NewFactory(brand)
 		if err != nil {
 			fmt.Println(err.Error())
 			continue
